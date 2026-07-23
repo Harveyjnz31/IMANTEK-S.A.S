@@ -54,14 +54,14 @@ export default function HeroSection() {
           className="hero-animate mb-5 max-w-[920px] text-balance text-[28px] font-bold uppercase leading-[1.16] sm:text-4xl md:text-5xl lg:text-[52px]"
           style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#ffffff' }}
         >
-          Ingenier&iacute;a y servicios t&eacute;cnicos integrales para operaciones seguras y confiables
+          Ingenier&iacute;a y Servicios T&eacute;cnicos Integrales para la continuidad de su operaci&oacute;n industrial
         </h1>
 
         <p
           className="hero-animate mb-8 max-w-[620px] text-sm leading-relaxed sm:text-base md:text-lg"
           style={{ fontFamily: "'Inter', sans-serif", color: '#8a8580' }}
         >
-          Servicios t&eacute;cnicos integrales para operaciones seguras y confiables
+          M&aacute;s que un contratista, somos un socio estrat&eacute;gico en ingenier&iacute;a, automatizaci&oacute;n y mantenimiento industrial.
         </p>
 
         {/* Tags */}
