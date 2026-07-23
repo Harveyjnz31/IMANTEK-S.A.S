@@ -6,21 +6,23 @@ const sectors = [
     name: 'Industrial & Logístico',
     description: 'Soluciones de ingeniería y mantenimiento preventivo/correctivo diseñadas para garantizar la continuidad operativa.',
     items: ['Plantas de producción', 'Fábricas', 'Centros de distribución', 'Bodegas'],
-    image: '/images/sector-industrial.jpg',
+    image: 'images/sector-industrial.jpg',
   },
   {
     name: 'Comercial & Retail',
     description: 'Instalaciones eléctricas, climatización y mantenimiento de infraestructura orientados a crear entornos confortables y seguros.',
     items: ['Centros comerciales', 'Hoteles', 'Restaurantes'],
-    image: '/images/sector-commercial-retail.jpg',
+    image: 'images/sector-commercial-retail.jpg',
   },
   {
     name: 'Residencial & Copropiedades',
     description: 'Servicios preventivos programados y atención técnica oportuna para la conservación física.',
     items: ['Conjuntos residenciales', 'Condominios', 'Zonas comunes'],
-    image: '/images/sector-residential.jpg',
+    image: 'images/sector-residential.jpg',
   },
 ];
+
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
 export default function SectorsSection() {
   const headerRef = useScrollReveal<HTMLDivElement>({ translateY: 30 });
@@ -109,9 +111,10 @@ function SectorCard({ sector }: { sector: typeof sectors[0] }) {
       {/* Image */}
       <div className="overflow-hidden" style={{ aspectRatio: '16/10' }}>
         <img
-          src={sector.image}
+          src={assetUrl(sector.image)}
           alt={sector.name}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="block h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
         />
       </div>
 

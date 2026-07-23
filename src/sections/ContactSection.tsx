@@ -57,18 +57,6 @@ export default function ContactSection() {
               className="mb-2 text-xs uppercase tracking-[2px]"
               style={{ fontFamily: "'IBM Plex Mono', monospace", color: '#009fe3' }}
             >
-              Sitio web
-            </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", color: '#cccccc', fontSize: '16px' }}>
-              imantek.com.co
-            </p>
-          </div>
-
-          <div className="mb-7">
-            <p
-              className="mb-2 text-xs uppercase tracking-[2px]"
-              style={{ fontFamily: "'IBM Plex Mono', monospace", color: '#009fe3' }}
-            >
               Correo electrónico
             </p>
             <p style={{ fontFamily: "'Inter', sans-serif", color: '#cccccc', fontSize: '16px' }}>

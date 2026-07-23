@@ -76,7 +76,7 @@ export default function Footer() {
               style={{ fontFamily: "'Inter', sans-serif", color: '#666666' }}
             >
               © 2025–2026 IMANTEK S.A.S.<br />
-              Colombia · imantek.com.co
+              Colombia
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Footer() {
             className="text-xs"
             style={{ fontFamily: "'Inter', sans-serif", color: '#666666' }}
           >
-            © 2025–2026 IMANTEK S.A.S. · Colombia · imantek.com.co
+            © 2025–2026 IMANTEK S.A.S. · Colombia
           </p>
           <p
             className="text-xs"

@@ -48,35 +48,28 @@ export default function HeroSection() {
       {/* Content */}
       <div
         ref={contentRef}
-        className="relative z-[2] flex min-h-screen flex-col items-center justify-center px-6 pb-24 text-center"
+        className="relative z-[2] flex min-h-screen flex-col items-center justify-center px-5 pb-28 pt-28 text-center sm:px-6 md:pb-32"
       >
-        <p
-          className="hero-animate mb-6 text-xs uppercase tracking-[2px]"
-          style={{ fontFamily: "'IBM Plex Mono', monospace", color: '#009fe3' }}
-        >
-          IMANTEK S.A.S. &middot; NIT: 902069790-1
-        </p>
-
         <h1
-          className="hero-animate mb-6 max-w-[800px] text-3xl font-bold uppercase leading-[1.1] sm:text-4xl md:text-[52px]"
+          className="hero-animate mb-5 max-w-[920px] text-balance text-[28px] font-bold uppercase leading-[1.16] sm:text-4xl md:text-5xl lg:text-[52px]"
           style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#ffffff' }}
         >
           Ingenier&iacute;a y servicios t&eacute;cnicos integrales para operaciones seguras y confiables
         </h1>
 
         <p
-          className="hero-animate mb-8 max-w-[600px] text-base leading-relaxed sm:text-lg"
+          className="hero-animate mb-8 max-w-[620px] text-sm leading-relaxed sm:text-base md:text-lg"
           style={{ fontFamily: "'Inter', sans-serif", color: '#8a8580' }}
         >
           Servicios t&eacute;cnicos integrales para operaciones seguras y confiables
         </p>
 
         {/* Tags */}
-        <div className="hero-animate mb-10 flex flex-wrap justify-center gap-3">
+        <div className="hero-animate mb-10 flex max-w-[920px] flex-wrap justify-center gap-2 sm:gap-3">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="border px-4 py-2 text-xs uppercase tracking-[1.5px]"
+              className="border px-3 py-2 text-[10px] uppercase tracking-[1px] sm:px-4 sm:text-xs sm:tracking-[1.5px]"
               style={{
                 fontFamily: "'IBM Plex Mono', monospace",
                 color: '#cccccc',
@@ -103,7 +96,7 @@ export default function HeroSection() {
         </a>
 
         {/* Scroll Indicator */}
-        <div className="hero-animate absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center">
+        <div className="hero-animate absolute bottom-10 left-1/2 hidden -translate-x-1/2 flex-col items-center md:flex">
           <div className="relative h-10 w-[1px] overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.4)' }}>
             <div
               className="absolute h-2.5 w-2.5 -translate-x-1/2 rounded-full"
