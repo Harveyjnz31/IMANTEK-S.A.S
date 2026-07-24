@@ -1,11 +1,13 @@
 interface BrandLogoProps {
   className?: string;
   dark?: boolean;
+  primaryColor?: string;
+  accentColor?: string;
 }
 
-export default function BrandLogo({ className = '', dark = false }: BrandLogoProps) {
-  const primary = dark ? '#050b16' : '#ffffff';
-  const accent = '#009fe3';
+export default function BrandLogo({ className = '', dark = false, primaryColor, accentColor }: BrandLogoProps) {
+  const primary = primaryColor ?? (dark ? '#050b16' : '#ffffff');
+  const accent = accentColor ?? '#009fe3';
 
   return (
     <span

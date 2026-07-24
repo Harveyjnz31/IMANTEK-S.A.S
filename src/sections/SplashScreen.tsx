@@ -48,7 +48,7 @@ export default function SplashScreen() {
 
   return (
     <div
-      className={`fixed inset-0 z-[200] flex items-center justify-center bg-[#071019] px-6 text-white transition-opacity duration-500 ${
+      className={`fixed inset-0 z-[200] flex items-center justify-center bg-[#050606] px-6 text-white transition-opacity duration-500 ${
         finishing ? 'opacity-0' : 'opacity-100'
       }`}
       onPointerDown={() => setProgress(100)}
@@ -56,12 +56,16 @@ export default function SplashScreen() {
       aria-live="polite"
       aria-label="Cargando"
     >
-      <div className="flex w-full max-w-[360px] flex-col items-center">
-        <BrandLogo className="mb-8 text-5xl sm:text-6xl" />
+      <div className="flex w-full max-w-[150px] flex-col items-center sm:max-w-[180px]">
+        <BrandLogo
+          className="mb-7 text-[2rem] sm:text-[2.35rem]"
+          primaryColor="#d99a32"
+          accentColor="#d99a32"
+        />
 
-        <div className="h-1.5 w-full overflow-hidden bg-white/15">
+        <div className="h-[3px] w-[120px] overflow-hidden bg-white/10 sm:w-[150px]">
           <div
-            className="h-full bg-[#009fe3] transition-[width] duration-200 ease-out"
+            className="h-full bg-[#d99a32] transition-[width] duration-200 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>
