@@ -9,10 +9,12 @@ import RoadmapSection from './sections/RoadmapSection'
 import ContactSection from './sections/ContactSection'
 import Footer from './sections/Footer'
 import WhatsAppButton from './sections/WhatsAppButton'
+import SplashScreen from './sections/SplashScreen'
 
 export default function App() {
   return (
     <div className="min-h-screen">
+      <SplashScreen />
       <Navigation />
       <HeroSection />
       <AboutSection />
