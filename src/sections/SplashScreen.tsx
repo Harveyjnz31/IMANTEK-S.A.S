@@ -59,13 +59,11 @@ export default function SplashScreen() {
       <div className="flex w-full max-w-[150px] flex-col items-center sm:max-w-[180px]">
         <BrandLogo
           className="mb-7 text-[2rem] sm:text-[2.35rem]"
-          primaryColor="#d99a32"
-          accentColor="#d99a32"
         />
 
         <div className="h-[3px] w-[120px] overflow-hidden bg-white/10 sm:w-[150px]">
           <div
-            className="h-full bg-[#d99a32] transition-[width] duration-200 ease-out"
+            className="h-full bg-[#009fe3] transition-[width] duration-200 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>
